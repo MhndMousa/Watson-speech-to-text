@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59C7F42322CD8E6F005D138F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42222CD8E6F005D138F /* AppDelegate.swift */; };
+		59C7F42522CD8E6F005D138F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42422CD8E6F005D138F /* ViewController.swift */; };
+		59C7F42822CD8E6F005D138F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C7F42622CD8E6F005D138F /* Main.storyboard */; };
+		59C7F42B22CD8E6F005D138F /* Watson_Lynn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42922CD8E6F005D138F /* Watson_Lynn.xcdatamodeld */; };
+		59C7F42D22CD8E71005D138F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59C7F42C22CD8E71005D138F /* Assets.xcassets */; };
+		59C7F43022CD8E71005D138F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C7F42E22CD8E71005D138F /* LaunchScreen.storyboard */; };
+		59C7F43B22CD8E71005D138F /* Watson_LynnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F43A22CD8E71005D138F /* Watson_LynnTests.swift */; };
+		59C7F44622CD8E71005D138F /* Watson_LynnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F44522CD8E71005D138F /* Watson_LynnUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59C7F43722CD8E71005D138F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59C7F41722CD8E6F005D138F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59C7F41E22CD8E6F005D138F;
+			remoteInfo = "Watson-Lynn";
+		};
+		59C7F44222CD8E71005D138F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59C7F41722CD8E6F005D138F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59C7F41E22CD8E6F005D138F;
+			remoteInfo = "Watson-Lynn";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59C7F41F22CD8E6F005D138F /* Watson-Lynn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watson-Lynn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C7F42222CD8E6F005D138F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59C7F42422CD8E6F005D138F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59C7F42722CD8E6F005D138F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59C7F42A22CD8E6F005D138F /* Watson_Lynn.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Watson_Lynn.xcdatamodel; sourceTree = "<group>"; };
+		59C7F42C22CD8E71005D138F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59C7F42F22CD8E71005D138F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59C7F43122CD8E71005D138F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59C7F43622CD8E71005D138F /* Watson-LynnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watson-LynnTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C7F43A22CD8E71005D138F /* Watson_LynnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watson_LynnTests.swift; sourceTree = "<group>"; };
+		59C7F43C22CD8E71005D138F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59C7F44122CD8E71005D138F /* Watson-LynnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watson-LynnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59C7F44522CD8E71005D138F /* Watson_LynnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watson_LynnUITests.swift; sourceTree = "<group>"; };
+		59C7F44722CD8E71005D138F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59C7F41C22CD8E6F005D138F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C7F43322CD8E71005D138F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C7F43E22CD8E71005D138F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59C7F41622CD8E6F005D138F = {
+			isa = PBXGroup;
+			children = (
+				59C7F42122CD8E6F005D138F /* Watson-Lynn */,
+				59C7F43922CD8E71005D138F /* Watson-LynnTests */,
+				59C7F44422CD8E71005D138F /* Watson-LynnUITests */,
+				59C7F42022CD8E6F005D138F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59C7F42022CD8E6F005D138F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59C7F41F22CD8E6F005D138F /* Watson-Lynn.app */,
+				59C7F43622CD8E71005D138F /* Watson-LynnTests.xctest */,
+				59C7F44122CD8E71005D138F /* Watson-LynnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59C7F42122CD8E6F005D138F /* Watson-Lynn */ = {
+			isa = PBXGroup;
+			children = (
+				59C7F42222CD8E6F005D138F /* AppDelegate.swift */,
+				59C7F42422CD8E6F005D138F /* ViewController.swift */,
+				59C7F42622CD8E6F005D138F /* Main.storyboard */,
+				59C7F42C22CD8E71005D138F /* Assets.xcassets */,
+				59C7F42E22CD8E71005D138F /* LaunchScreen.storyboard */,
+				59C7F43122CD8E71005D138F /* Info.plist */,
+				59C7F42922CD8E6F005D138F /* Watson_Lynn.xcdatamodeld */,
+			);
+			path = "Watson-Lynn";
+			sourceTree = "<group>";
+		};
+		59C7F43922CD8E71005D138F /* Watson-LynnTests */ = {
+			isa = PBXGroup;
+			children = (
+				59C7F43A22CD8E71005D138F /* Watson_LynnTests.swift */,
+				59C7F43C22CD8E71005D138F /* Info.plist */,
+			);
+			path = "Watson-LynnTests";
+			sourceTree = "<group>";
+		};
+		59C7F44422CD8E71005D138F /* Watson-LynnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59C7F44522CD8E71005D138F /* Watson_LynnUITests.swift */,
+				59C7F44722CD8E71005D138F /* Info.plist */,
+			);
+			path = "Watson-LynnUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59C7F41E22CD8E6F005D138F /* Watson-Lynn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59C7F44A22CD8E71005D138F /* Build configuration list for PBXNativeTarget "Watson-Lynn" */;
+			buildPhases = (
+				59C7F41B22CD8E6F005D138F /* Sources */,
+				59C7F41C22CD8E6F005D138F /* Frameworks */,
+				59C7F41D22CD8E6F005D138F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watson-Lynn";
+			productName = "Watson-Lynn";
+			productReference = 59C7F41F22CD8E6F005D138F /* Watson-Lynn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59C7F43522CD8E71005D138F /* Watson-LynnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59C7F44D22CD8E71005D138F /* Build configuration list for PBXNativeTarget "Watson-LynnTests" */;
+			buildPhases = (
+				59C7F43222CD8E71005D138F /* Sources */,
+				59C7F43322CD8E71005D138F /* Frameworks */,
+				59C7F43422CD8E71005D138F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59C7F43822CD8E71005D138F /* PBXTargetDependency */,
+			);
+			name = "Watson-LynnTests";
+			productName = "Watson-LynnTests";
+			productReference = 59C7F43622CD8E71005D138F /* Watson-LynnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59C7F44022CD8E71005D138F /* Watson-LynnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59C7F45022CD8E71005D138F /* Build configuration list for PBXNativeTarget "Watson-LynnUITests" */;
+			buildPhases = (
+				59C7F43D22CD8E71005D138F /* Sources */,
+				59C7F43E22CD8E71005D138F /* Frameworks */,
+				59C7F43F22CD8E71005D138F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59C7F44322CD8E71005D138F /* PBXTargetDependency */,
+			);
+			name = "Watson-LynnUITests";
+			productName = "Watson-LynnUITests";
+			productReference = 59C7F44122CD8E71005D138F /* Watson-LynnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59C7F41722CD8E6F005D138F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Muhannad Alnemer";
+				TargetAttributes = {
+					59C7F41E22CD8E6F005D138F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					59C7F43522CD8E71005D138F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 59C7F41E22CD8E6F005D138F;
+					};
+					59C7F44022CD8E71005D138F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 59C7F41E22CD8E6F005D138F;
+					};
+				};
+			};
+			buildConfigurationList = 59C7F41A22CD8E6F005D138F /* Build configuration list for PBXProject "Watson-Lynn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59C7F41622CD8E6F005D138F;
+			productRefGroup = 59C7F42022CD8E6F005D138F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59C7F41E22CD8E6F005D138F /* Watson-Lynn */,
+				59C7F43522CD8E71005D138F /* Watson-LynnTests */,
+				59C7F44022CD8E71005D138F /* Watson-LynnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59C7F41D22CD8E6F005D138F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C7F43022CD8E71005D138F /* LaunchScreen.storyboard in Resources */,
+				59C7F42D22CD8E71005D138F /* Assets.xcassets in Resources */,
+				59C7F42822CD8E6F005D138F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C7F43422CD8E71005D138F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C7F43F22CD8E71005D138F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59C7F41B22CD8E6F005D138F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C7F42522CD8E6F005D138F /* ViewController.swift in Sources */,
+				59C7F42322CD8E6F005D138F /* AppDelegate.swift in Sources */,
+				59C7F42B22CD8E6F005D138F /* Watson_Lynn.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C7F43222CD8E71005D138F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C7F43B22CD8E71005D138F /* Watson_LynnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59C7F43D22CD8E71005D138F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59C7F44622CD8E71005D138F /* Watson_LynnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59C7F43822CD8E71005D138F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59C7F41E22CD8E6F005D138F /* Watson-Lynn */;
+			targetProxy = 59C7F43722CD8E71005D138F /* PBXContainerItemProxy */;
+		};
+		59C7F44322CD8E71005D138F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59C7F41E22CD8E6F005D138F /* Watson-Lynn */;
+			targetProxy = 59C7F44222CD8E71005D138F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59C7F42622CD8E6F005D138F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59C7F42722CD8E6F005D138F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59C7F42E22CD8E71005D138F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59C7F42F22CD8E71005D138F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59C7F44822CD8E71005D138F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59C7F44922CD8E71005D138F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59C7F44B22CD8E71005D138F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WXT8YUFTMG;
+				INFOPLIST_FILE = "Watson-Lynn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhnd.Watson-Lynn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59C7F44C22CD8E71005D138F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WXT8YUFTMG;
+				INFOPLIST_FILE = "Watson-Lynn/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhnd.Watson-Lynn";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		59C7F44E22CD8E71005D138F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WXT8YUFTMG;
+				INFOPLIST_FILE = "Watson-LynnTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhnd.Watson-LynnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watson-Lynn.app/Watson-Lynn";
+			};
+			name = Debug;
+		};
+		59C7F44F22CD8E71005D138F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WXT8YUFTMG;
+				INFOPLIST_FILE = "Watson-LynnTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhnd.Watson-LynnTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watson-Lynn.app/Watson-Lynn";
+			};
+			name = Release;
+		};
+		59C7F45122CD8E71005D138F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WXT8YUFTMG;
+				INFOPLIST_FILE = "Watson-LynnUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhnd.Watson-LynnUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Watson-Lynn";
+			};
+			name = Debug;
+		};
+		59C7F45222CD8E71005D138F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WXT8YUFTMG;
+				INFOPLIST_FILE = "Watson-LynnUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mhnd.Watson-LynnUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Watson-Lynn";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59C7F41A22CD8E6F005D138F /* Build configuration list for PBXProject "Watson-Lynn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59C7F44822CD8E71005D138F /* Debug */,
+				59C7F44922CD8E71005D138F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59C7F44A22CD8E71005D138F /* Build configuration list for PBXNativeTarget "Watson-Lynn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59C7F44B22CD8E71005D138F /* Debug */,
+				59C7F44C22CD8E71005D138F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59C7F44D22CD8E71005D138F /* Build configuration list for PBXNativeTarget "Watson-LynnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59C7F44E22CD8E71005D138F /* Debug */,
+				59C7F44F22CD8E71005D138F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59C7F45022CD8E71005D138F /* Build configuration list for PBXNativeTarget "Watson-LynnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59C7F45122CD8E71005D138F /* Debug */,
+				59C7F45222CD8E71005D138F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59C7F42922CD8E6F005D138F /* Watson_Lynn.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				59C7F42A22CD8E6F005D138F /* Watson_Lynn.xcdatamodel */,
+			);
+			currentVersion = 59C7F42A22CD8E6F005D138F /* Watson_Lynn.xcdatamodel */;
+			path = Watson_Lynn.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 59C7F41722CD8E6F005D138F /* Project object */;
+}
