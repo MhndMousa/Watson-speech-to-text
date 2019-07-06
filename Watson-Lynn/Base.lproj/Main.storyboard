@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Watson_Lynn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uW3-GX-u3y">
+                                <rect key="frame" x="0.0" y="20" width="375" height="205.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">I hate these new features On #ThisPhone after the update.
+I hate #ThisPhoneCompany products, you'd have to torture me to get me to use #ThisPhone.
+The emojis in #ThisPhone are stupid.
+#ThisPhone is a useless, stupid waste of money.
+#ThisPhone is the worst phone I've ever had - ever 😠.
+#ThisPhone another ripoff, lost all respect SHAME.
+I'm worried my #ThisPhone is going to overheat like my brother's did.
+#ThisPhoneCompany really let me down... my new phone won't even turn on.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5g-VN-Sqx">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-3Q-ZY3">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="30"/>
+                                        <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="recordButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mcc-kB-UH2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8M-7F-di0">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="30"/>
+                                        <state key="normal" title="Analyze"/>
+                                        <connections>
+                                            <action selector="analyzeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JBZ-PI-ek4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YTl-3Q-ZY3" firstAttribute="width" secondItem="L8M-7F-di0" secondAttribute="width" id="Afu-Kq-8Nn"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Analyzer result will show here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="HGE-RL-dWx">
+                                <rect key="frame" x="0.0" y="225.5" width="375" height="206"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <color key="textColor" red="0.9025023794" green="0.9025023794" blue="0.9025023794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sentence analyzing result will show here" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xIb-Cs-dbo">
+                                <rect key="frame" x="0.0" y="431.5" width="375" height="205.5"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="L5g-VN-Sqx" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6eJ-57-1mA"/>
+                            <constraint firstItem="uW3-GX-u3y" firstAttribute="height" secondItem="HGE-RL-dWx" secondAttribute="height" id="6qs-PR-rqA"/>
+                            <constraint firstItem="L5g-VN-Sqx" firstAttribute="top" secondItem="xIb-Cs-dbo" secondAttribute="bottom" id="EnE-bn-XWm"/>
+                            <constraint firstItem="uW3-GX-u3y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L2u-xs-hND"/>
+                            <constraint firstItem="uW3-GX-u3y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="LLb-ky-mpg"/>
+                            <constraint firstItem="HGE-RL-dWx" firstAttribute="height" secondItem="xIb-Cs-dbo" secondAttribute="height" id="Q1N-Pj-v11"/>
+                            <constraint firstItem="HGE-RL-dWx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RBU-2F-4hX"/>
+                            <constraint firstItem="HGE-RL-dWx" firstAttribute="top" secondItem="uW3-GX-u3y" secondAttribute="bottom" id="VV3-qA-1QJ"/>
+                            <constraint firstItem="HGE-RL-dWx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aPp-fP-ujw"/>
+                            <constraint firstItem="xIb-Cs-dbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ddX-qL-GsA"/>
+                            <constraint firstItem="uW3-GX-u3y" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hg1-rE-IgF"/>
+                            <constraint firstItem="xIb-Cs-dbo" firstAttribute="top" secondItem="HGE-RL-dWx" secondAttribute="bottom" id="iJe-py-2Zm"/>
+                            <constraint firstItem="L5g-VN-Sqx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jdt-rA-rSk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xIb-Cs-dbo" secondAttribute="trailing" id="kPB-tr-P3Y"/>
+                            <constraint firstItem="xIb-Cs-dbo" firstAttribute="top" secondItem="HGE-RL-dWx" secondAttribute="bottom" id="nRd-BM-eAK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L5g-VN-Sqx" secondAttribute="trailing" id="y4L-3H-hpd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="analyzeButton" destination="L8M-7F-di0" id="7qO-mV-L3U"/>
+                        <outlet property="analyzeView" destination="HGE-RL-dWx" id="7Q2-U2-q8H"/>
+                        <outlet property="microphoneButton" destination="YTl-3Q-ZY3" id="iDi-lL-jcJ"/>
+                        <outlet property="sentenceAnalyzeView" destination="xIb-Cs-dbo" id="OuL-Dr-ZKW"/>
+                        <outlet property="textView" destination="uW3-GX-u3y" id="CSd-UJ-eI5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="94.902548725637189"/>
         </scene>
     </scenes>
 </document>

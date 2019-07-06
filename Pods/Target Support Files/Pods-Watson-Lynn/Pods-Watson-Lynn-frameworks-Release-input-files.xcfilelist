@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Watson-Lynn/Pods-Watson-Lynn-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework
+${BUILT_PRODUCTS_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework

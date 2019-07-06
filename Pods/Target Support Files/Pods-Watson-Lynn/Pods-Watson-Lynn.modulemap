@@ -1,0 +1,6 @@
+framework module Pods_Watson_Lynn {
+  umbrella header "Pods-Watson-Lynn-umbrella.h"
+
+  export *
+  module * { export * }
+}
