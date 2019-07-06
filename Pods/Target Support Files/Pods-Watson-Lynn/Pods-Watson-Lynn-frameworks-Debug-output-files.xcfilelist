@@ -1,3 +1,4 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PersonalityInsights.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RestKit.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpeechToText.framework
 ${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ToneAnalyzer.framework

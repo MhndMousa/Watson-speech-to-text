@@ -161,12 +161,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonRestKit/RestKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework"

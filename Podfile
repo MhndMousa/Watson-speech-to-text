@@ -5,6 +5,7 @@ target 'Watson-Lynn' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+    pod 'IBMWatsonPersonalityInsightsV3', '~> 2.1.1' 
     pod 'IBMWatsonToneAnalyzerV3', '~> 2.1.1'
     pod 'IBMWatsonSpeechToTextV1', '~> 2.1.1'
   # Pods for Watson-Lynn

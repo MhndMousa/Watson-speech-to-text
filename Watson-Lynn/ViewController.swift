@@ -9,6 +9,7 @@
 import UIKit
 import SpeechToText
 import ToneAnalyzer
+import PersonalityInsights
 
 class ViewController: UIViewController {
     
@@ -16,17 +17,59 @@ class ViewController: UIViewController {
     var isStreaming = false
     var accumulator = SpeechRecognitionResultsAccumulator()
     var toneAnalyzer: ToneAnalyzer!
+    var personalityInsight: PersonalityInsights!
     
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var analyzeButton: UIButton!
     @IBOutlet weak var analyzeView: UITextView!
     @IBOutlet weak var sentenceAnalyzeView: UITextView!
+    @IBOutlet weak var personalityAnalyzeView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         speechToText = SpeechToText(apiKey: "sQlt7zBj8ablPIyH7ExjrVETGTBjhpOibFCCNr01imF-")
         toneAnalyzer = ToneAnalyzer(version: "2017-09-21", apiKey: "uJyDOwI9DHO2orh0nFXJPxKeTYjJlrekK5DKf1lPMVrl")
+        personalityInsight = PersonalityInsights(version: "2017-10-13", apiKey: "XflUV2fhbXd9hdlaa7foDV2GJx4Wze0uDJPCc5WRkWQq")
+    }
+    
+    
+    
+    @IBAction func personalityButtonClicked(_ sender: Any) {
+        
+        self.personalityAnalyzeView.text = "Getting analytics from Watson .. Please wait"
+
+        
+        personalityInsight.profile(profileContent: .text(textView.text), contentLanguage: nil, acceptLanguage: nil, rawScores: nil, consumptionPreferences: nil, headers: nil) { (res, err) in
+            if err != nil{
+                print(err?.failureReason)
+            }else{
+                let result = res?.result
+                
+                DispatchQueue.main.async {
+                    self.personalityAnalyzeView.text = "Personality Insights:\n\n\n"
+                    result?.needs.forEach({ (n) in
+                        self.personalityAnalyzeView.text += "\(n.name)   \(n.percentile.precentWithSign)\n"
+                    })
+                    self.personalityAnalyzeView.text += "\n"
+                    
+                    result?.personality.forEach({ (p) in
+                        self.personalityAnalyzeView.text += "\(p.name) \(p.percentile.precentWithSign)\n"
+                        p.children?.forEach({ (c) in
+                            self.personalityAnalyzeView.text += "* \(c.name) \(c.percentile.precentWithSign)\n"
+                        })
+                        self.personalityAnalyzeView.text += "\n"
+                    })
+                    self.personalityAnalyzeView.text += "\n"
+
+                    result?.values.forEach({ (v) in
+                        self.personalityAnalyzeView.text += "\(v.name) \(v.percentile.precentWithSign)\n"
+                    })
+                
+                }
+            }
+        }
+        
     }
     
     @IBAction func analyzeButtonClicked(_ sender: Any) {
@@ -42,9 +85,6 @@ class ViewController: UIViewController {
                 print(err)
             }else{
                 let result = res?.result
-
-//                print(res?.headers)
-//                print( res?.result?.documentTone.tones)
                 DispatchQueue.main.async {
                     self.analyzeView.text = "Overall Analytics: \n\n\n"
                     self.sentenceAnalyzeView.text = "Sentence Analytics: \n\n\n"
@@ -52,6 +92,7 @@ class ViewController: UIViewController {
                     result?.documentTone.tones?.forEach({ (tone) in
                         self.analyzeView.text += "\(tone.toneName) with score of \(tone.score.precent)\n"
                     })
+                    self.personalityAnalyzeView.text += "\n"
                     
                     result?.sentencesTone?.forEach({ (sentence) in
                         self.sentenceAnalyzeView.text += "\(sentence.text)\n"
@@ -68,36 +109,6 @@ class ViewController: UIViewController {
                 
             }
         }
-        
-        
-//        guard let url = URL(string: "https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2017-09-21"),
-//            let payload = "{\"text\": \(textView.text)}".data(using: .utf8) else
-//        {
-//            return
-//        }
-//
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "POST"
-////        request.
-//
-//
-//        request.httpBody = textView.text.data(using: .utf8)
-//        request.addValue("uJyDOwI9DHO2orh0nFXJPxKeTYjJlrekK5DKf1lPMVrl", forHTTPHeaderField: "Authorization")
-//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.httpBody = payload
-//
-//
-//            print(request.allHTTPHeaderFields)
-//
-//        URLSession.shared.dataTask(with: request) { (data, response, error) in
-//            guard error == nil else { print(error!.localizedDescription); return }
-//            guard let data = data else { print("Empty data"); return }
-//
-//            if let str = String(data: data, encoding: .utf8) {
-//                print(str)
-//            }
-//            }.resume()
-
         
     }
     

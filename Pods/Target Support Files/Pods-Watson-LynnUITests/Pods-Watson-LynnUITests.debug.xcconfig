@@ -1,7 +1,7 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonRestKit" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonSpeechToTextV1" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonToneAnalyzerV3" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonPersonalityInsightsV3" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonRestKit" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonSpeechToTextV1" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonToneAnalyzerV3" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonRestKit/RestKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -l"z" -framework "RestKit" -framework "SpeechToText" -framework "Starscream" -framework "ToneAnalyzer"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonPersonalityInsightsV3/PersonalityInsights.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonRestKit/RestKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonSpeechToTextV1/SpeechToText.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/IBMWatsonToneAnalyzerV3/ToneAnalyzer.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Starscream/Starscream.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -l"z" -framework "PersonalityInsights" -framework "RestKit" -framework "SpeechToText" -framework "Starscream" -framework "ToneAnalyzer"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
