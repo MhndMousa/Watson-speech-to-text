@@ -183,19 +183,19 @@ extension ToneScore{
     var feelingColor: UIColor {
         switch self.toneName {
         case "Anger":
-            return UIColor(netHex: 0x6e1b1b) // dark red
+            return .darkRed
         case "Fear":
-            return UIColor(netHex: 0x2c6e1b) // green
+            return .darkGreen
         case "Joy":
-            return UIColor(netHex: 0xc4b65a) // yellow/gold
+            return .darkYellow
         case "Sadness":
-            return UIColor(netHex: 0x8a6030) // brown
+            return .darkBrown
         case "Analytical":
-            return UIColor(netHex: 0x75308a) // purble
+            return .darkPurple
         case "Confident":
-            return UIColor(netHex: 0x18ad81) // cyan
+            return .darkBlue
         case "Tentative":
-            return UIColor(netHex: 0xdbba14) // orange
+            return .darkOrange
         default:
          return .black
         }
@@ -209,6 +209,12 @@ extension UIColor{
     
     
     class var darkRed: UIColor{return UIColor(netHex: 0x6e1b1b)}
+    class var darkGreen: UIColor{return UIColor(netHex: 0x2c6e1b)}
+    class var darkYellow: UIColor{return UIColor(netHex: 0xc4b65a)}
+    class var darkBrown: UIColor{return UIColor(netHex: 0x8a6030)}
+    class var darkPurple: UIColor{return UIColor(netHex: 0x75308a)}
+    class var darkBlue: UIColor{return UIColor(netHex: 0x18ad81)}
+    class var darkOrange: UIColor{return UIColor(netHex: 0x6e1b1b)}
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")
