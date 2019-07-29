@@ -686,13 +686,13 @@ promise I'll fight just as hard in a second term.
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-3Q-ZY3">
                                 <rect key="frame" x="162.5" y="548" width="50" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Vh2-X1-rya"/>
                                     <constraint firstAttribute="width" secondItem="YTl-3Q-ZY3" secondAttribute="height" multiplier="1:1" id="kdd-OV-tdf"/>
                                 </constraints>
                                 <state key="normal" title="*">
-                                    <color key="titleColor" red="0.43137254899999999" green="0.1058823529" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="recordButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mcc-kB-UH2"/>
