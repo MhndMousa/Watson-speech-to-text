@@ -22,10 +22,11 @@ class ViewController: UIViewController{
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var analyzeButton: UIButton!
-    @IBOutlet weak var analyzeView: UITextView!
+    @IBOutlet weak var personalityButton: UIButton!
+    //    @IBOutlet weak var analyzeView: UITextView!
 //    @IBOutlet weak var sentenceAnalyzeView: UITextView!
     @IBOutlet weak var personalityAnalyzeView: UITextView!
-    @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
     
     var coloredTone = [SentenceAnalysis]()
     
@@ -34,11 +35,11 @@ class ViewController: UIViewController{
         super.viewDidLoad()
 
         
-        self.tableView.dataSource = self
-        self.tableView.delegate = self
-        tableView.separatorStyle = .none
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 600
+//        self.tableView.dataSource = self
+//        self.tableView.delegate = self
+//        tableView.separatorStyle = .none
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 600
         
         
         
@@ -48,78 +49,15 @@ class ViewController: UIViewController{
     }
     
     
-    
-    @IBAction func personalityButtonClicked(_ sender: Any) {
-        
-        self.personalityAnalyzeView.text = "Getting analytics from Watson .. Please wait"
-
-        
-        personalityInsight.profile(profileContent: .text(textView.text), contentLanguage: nil, acceptLanguage: nil, rawScores: nil, consumptionPreferences: nil, headers: nil) { (res, err) in
-            if err != nil{
-                print(err?.failureReason)
-            }else{
-                let result = res?.result
-                
-                DispatchQueue.main.async {
-                    self.personalityAnalyzeView.text = "Personality Insights:\n\n\n"
-                    result?.needs.forEach({ (n) in
-                        self.personalityAnalyzeView.text += "\(n.name)   \(n.percentile.precentWithSign)\n"
-                    })
-                    self.personalityAnalyzeView.text += "\n"
-                    
-                    result?.personality.forEach({ (p) in
-                        self.personalityAnalyzeView.text += "\(p.name) \(p.percentile.precentWithSign)\n"
-                        p.children?.forEach({ (c) in
-                            self.personalityAnalyzeView.text += "* \(c.name) \(c.percentile.precentWithSign)\n"
-                        })
-                        self.personalityAnalyzeView.text += "\n"
-                    })
-                    self.personalityAnalyzeView.text += "\n"
-
-                    result?.values.forEach({ (v) in
-                        self.personalityAnalyzeView.text += "\(v.name) \(v.percentile.precentWithSign)\n"
-                    })
-                
-                }
-            }
-        }
-        
-    }
-    
-    @IBAction func analyzeButtonClicked(_ sender: Any) {
-        
-        
-        analyzeView.text = "Getting analytics from Watson .. Please wait"
-        
-        toneAnalyzer.tone(toneContent: ToneContent.text(textView.text)) { (res, err) in
-            if err != nil{
-                print(err)
-            }else{
-                let result = res?.result
-                DispatchQueue.main.async {
-                    self.analyzeView.text = "Overall Analytics: \n\n\n"
-
-                    // Populate tone
-                    result?.documentTone.tones?.forEach({ (tone) in
-                        self.analyzeView.text += "\(tone.toneName) with score of \(tone.score.precent)\n"
-                    })
-                    self.personalityAnalyzeView.text += "\n"
-                    
-                    
-                    // Populate Sentences
-                    result?.sentencesTone?.forEach({ (sentence) in
-                        print(sentence)
-                        self.coloredTone.append(sentence)
-                    })
-                    self.tableView.reloadData()
-//                    self.tableView.layoutIfNeeded()
-                }
-            }
-        
-        }
-    
-    }
-    
+//    
+//    @IBAction func personalityButtonClicked(_ sender: Any) {
+//        performSegue(withIdentifier: "toPersonalityVC", sender: nil)
+//    }
+//    
+//    @IBAction func analyzeButtonClicked(_ sender: Any) {
+//        performSegue(withIdentifier: "toAnalyzeVC", sender: nil)
+//    }
+//    
     @IBAction func recordButtonClicked(_ sender: Any) {
         if !isStreaming {
             isStreaming = true
@@ -175,6 +113,20 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
         
         return cell
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+//        if segue.destination is SentenceViewController
+//        {
+//            let vc = segue.destination as? SentenceViewController
+//            vc?.words = textView.text
+//        }
+//        if segue.destination is PersonalityViewController{
+//            let vc = segue.destination as? PersonalityViewController
+//            vc?.text = textView.text
+//        }
+    }
+
+    
 }
 
 
@@ -214,7 +166,7 @@ extension UIColor{
     class var darkBrown: UIColor{return UIColor(netHex: 0x8a6030)}
     class var darkPurple: UIColor{return UIColor(netHex: 0x75308a)}
     class var darkBlue: UIColor{return UIColor(netHex: 0x18ad81)}
-    class var darkOrange: UIColor{return UIColor(netHex: 0x6e1b1b)}
+    class var darkOrange: UIColor{return UIColor(netHex: 0xD18B0A)}
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

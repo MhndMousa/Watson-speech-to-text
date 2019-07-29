@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3353516F5B3D783C65F3D3DD /* Pods_Watson_LynnUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E95340B92B0068233B9755 /* Pods_Watson_LynnUITests.framework */; };
 		57FD613E9727E33E07A3E223 /* Pods_Watson_LynnTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2434174078A699E2576FF23 /* Pods_Watson_LynnTests.framework */; };
+		5901F3E622EB621400A913A4 /* SentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901F3E522EB621400A913A4 /* SentenceViewController.swift */; };
+		5901F3E822EB623400A913A4 /* PersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901F3E722EB623400A913A4 /* PersonalityViewController.swift */; };
 		59C7F42322CD8E6F005D138F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42222CD8E6F005D138F /* AppDelegate.swift */; };
 		59C7F42522CD8E6F005D138F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42422CD8E6F005D138F /* ViewController.swift */; };
 		59C7F42822CD8E6F005D138F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C7F42622CD8E6F005D138F /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 		19C87F6BD64079BC1C67AC60 /* Pods-Watson-LynnUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson-LynnUITests.debug.xcconfig"; path = "Target Support Files/Pods-Watson-LynnUITests/Pods-Watson-LynnUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		373B396D424C95F6015CA2B5 /* Pods-Watson-LynnTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson-LynnTests.debug.xcconfig"; path = "Target Support Files/Pods-Watson-LynnTests/Pods-Watson-LynnTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3999F731C7DA79B22B9C7630 /* Pods-Watson-LynnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson-LynnTests.release.xcconfig"; path = "Target Support Files/Pods-Watson-LynnTests/Pods-Watson-LynnTests.release.xcconfig"; sourceTree = "<group>"; };
+		5901F3E522EB621400A913A4 /* SentenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SentenceViewController.swift; path = "../../../../../../System/Volumes/Data/Users/mhnd/code/sana/Watson-Lynn/Watson-Lynn/SentenceViewController.swift"; sourceTree = "<group>"; };
+		5901F3E722EB623400A913A4 /* PersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalityViewController.swift; path = "../../../../../../System/Volumes/Data/Users/mhnd/code/sana/Watson-Lynn/Watson-Lynn/PersonalityViewController.swift"; sourceTree = "<group>"; };
 		59C7F41F22CD8E6F005D138F /* Watson-Lynn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watson-Lynn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C7F42222CD8E6F005D138F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C7F42422CD8E6F005D138F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +105,6 @@
 				19C87F6BD64079BC1C67AC60 /* Pods-Watson-LynnUITests.debug.xcconfig */,
 				134ABFF4D18E34BA370046FD /* Pods-Watson-LynnUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -137,6 +140,8 @@
 				59C7F42E22CD8E71005D138F /* LaunchScreen.storyboard */,
 				59C7F43122CD8E71005D138F /* Info.plist */,
 				59C7F42922CD8E6F005D138F /* Watson_Lynn.xcdatamodeld */,
+				5901F3E522EB621400A913A4 /* SentenceViewController.swift */,
+				5901F3E722EB623400A913A4 /* PersonalityViewController.swift */,
 			);
 			path = "Watson-Lynn";
 			sourceTree = "<group>";
@@ -393,6 +398,8 @@
 				59C7F42522CD8E6F005D138F /* ViewController.swift in Sources */,
 				59C7F42322CD8E6F005D138F /* AppDelegate.swift in Sources */,
 				59C7F42B22CD8E6F005D138F /* Watson_Lynn.xcdatamodeld in Sources */,
+				5901F3E822EB623400A913A4 /* PersonalityViewController.swift in Sources */,
+				5901F3E622EB621400A913A4 /* SentenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
