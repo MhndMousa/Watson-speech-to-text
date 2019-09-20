@@ -10,6 +10,8 @@ import UIKit
 import SpeechToText
 import ToneAnalyzer
 import PersonalityInsights
+import FirebaseFirestore
+import FirebaseStorage
 
 class ViewController: UIViewController{
     
@@ -83,7 +85,7 @@ class ViewController: UIViewController{
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
-        return .lightContent
+        return .default
     }
     
     
@@ -108,8 +110,8 @@ class ViewController: UIViewController{
             }
             callback.onResults = { results in
                 
-                self.isRecordingLabel.text = "Recording"
-                self.isRecordingLabel.textColor = .darkRed
+                self.isRecordingLabel.text = "Recording..."
+//                self.isRecordingLabel.textColor = .black
                 self.microphoneButton.titleLabel?.textColor = .darkRed
                 self.accumulator.add(results: results)
                 print(self.accumulator.bestTranscript)
@@ -119,17 +121,14 @@ class ViewController: UIViewController{
             speechToText.recognizeMicrophone(settings: settings, callback: callback)
         } else {
             isStreaming = false
-            
             isRecordingLabel.text = "Not Recording"
-            isRecordingLabel.textColor = .gray
+//            isRecordingLabel.textColor = .gray
             microphoneButton.titleLabel?.textColor = .white
 //            microphoneButton.setTitle("Start Microphone", for: .normal)
             speechToText.stopRecognizeMicrophone()
+//            speechToText.audio
         }
     }
-    
-
-
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource{

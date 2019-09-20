@@ -12,6 +12,7 @@
 		5901F3E622EB621400A913A4 /* SentenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901F3E522EB621400A913A4 /* SentenceViewController.swift */; };
 		5901F3E822EB623400A913A4 /* PersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5901F3E722EB623400A913A4 /* PersonalityViewController.swift */; };
 		5924848522EEAC20000341D7 /* CurvedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924848422EEAC20000341D7 /* CurvedView.swift */; };
+		598E28142322D1D400B661C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 598E28132322D1D400B661C4 /* GoogleService-Info.plist */; };
 		59C7F42322CD8E6F005D138F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42222CD8E6F005D138F /* AppDelegate.swift */; };
 		59C7F42522CD8E6F005D138F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F42422CD8E6F005D138F /* ViewController.swift */; };
 		59C7F42822CD8E6F005D138F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C7F42622CD8E6F005D138F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 		59C7F43022CD8E71005D138F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59C7F42E22CD8E71005D138F /* LaunchScreen.storyboard */; };
 		59C7F43B22CD8E71005D138F /* Watson_LynnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F43A22CD8E71005D138F /* Watson_LynnTests.swift */; };
 		59C7F44622CD8E71005D138F /* Watson_LynnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C7F44522CD8E71005D138F /* Watson_LynnUITests.swift */; };
+		59D8FA282335027100B5BBE6 /* WordCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D8FA272335027100B5BBE6 /* WordCloudViewController.swift */; };
 		F4A8975F85AF5F4CF2545A67 /* Pods_Watson_Lynn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7E1CD136C5AB7063DD8192D /* Pods_Watson_Lynn.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,7 @@
 		5901F3E522EB621400A913A4 /* SentenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SentenceViewController.swift; path = "../../../../../../System/Volumes/Data/Users/mhnd/code/sana/Watson-Lynn/Watson-Lynn/SentenceViewController.swift"; sourceTree = "<group>"; };
 		5901F3E722EB623400A913A4 /* PersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonalityViewController.swift; path = "../../../../../../System/Volumes/Data/Users/mhnd/code/sana/Watson-Lynn/Watson-Lynn/PersonalityViewController.swift"; sourceTree = "<group>"; };
 		5924848422EEAC20000341D7 /* CurvedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurvedView.swift; path = "../../../../../../System/Volumes/Data/Users/mhnd/code/sana/Watson-Lynn/Watson-Lynn/CurvedView.swift"; sourceTree = "<group>"; };
+		598E28132322D1D400B661C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		59C7F41F22CD8E6F005D138F /* Watson-Lynn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watson-Lynn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C7F42222CD8E6F005D138F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		59C7F42422CD8E6F005D138F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		59C7F44122CD8E71005D138F /* Watson-LynnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Watson-LynnUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C7F44522CD8E71005D138F /* Watson_LynnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Watson_LynnUITests.swift; sourceTree = "<group>"; };
 		59C7F44722CD8E71005D138F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D8FA272335027100B5BBE6 /* WordCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCloudViewController.swift; sourceTree = "<group>"; };
 		61E95340B92B0068233B9755 /* Pods_Watson_LynnUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_LynnUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71402DC8467057BFA1AA700F /* Pods-Watson-Lynn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Watson-Lynn.release.xcconfig"; path = "Target Support Files/Pods-Watson-Lynn/Pods-Watson-Lynn.release.xcconfig"; sourceTree = "<group>"; };
 		A7E1CD136C5AB7063DD8192D /* Pods_Watson_Lynn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Watson_Lynn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +149,8 @@
 				5901F3E522EB621400A913A4 /* SentenceViewController.swift */,
 				5901F3E722EB623400A913A4 /* PersonalityViewController.swift */,
 				5924848422EEAC20000341D7 /* CurvedView.swift */,
+				598E28132322D1D400B661C4 /* GoogleService-Info.plist */,
+				59D8FA272335027100B5BBE6 /* WordCloudViewController.swift */,
 			);
 			path = "Watson-Lynn";
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 				59C7F43022CD8E71005D138F /* LaunchScreen.storyboard in Resources */,
 				59C7F42D22CD8E71005D138F /* Assets.xcassets in Resources */,
 				59C7F42822CD8E6F005D138F /* Main.storyboard in Resources */,
+				598E28142322D1D400B661C4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +410,7 @@
 				59C7F42322CD8E6F005D138F /* AppDelegate.swift in Sources */,
 				59C7F42B22CD8E6F005D138F /* Watson_Lynn.xcdatamodeld in Sources */,
 				5901F3E822EB623400A913A4 /* PersonalityViewController.swift in Sources */,
+				59D8FA282335027100B5BBE6 /* WordCloudViewController.swift in Sources */,
 				5901F3E622EB621400A913A4 /* SentenceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,7 +20,7 @@ class CurvedView: UIView {
         myBezier.close()
         let context = UIGraphicsGetCurrentContext()
         context!.setLineWidth(4.0)
-        UIColor.init(red: 1, green:1 , blue: 1, alpha: 0.9).setFill()
+        UIColor.init(red: 110/255, green: 27/255 , blue: 27/255, alpha: 0.9).setFill()
         myBezier.fill()
 
     }
@@ -68,7 +68,7 @@ class CurvedViewWithAlpha: UIView {
         myBezier.close()
         let context = UIGraphicsGetCurrentContext()
         context!.setLineWidth(4.0)
-        UIColor.init(red: 1, green:1 , blue: 1, alpha: 0.4).setFill()
+        UIColor.init(red: 110/255, green: 27/255 , blue: 27/255,  alpha: 0.4).setFill()
         myBezier.fill()
         
     }

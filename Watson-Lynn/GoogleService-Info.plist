@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>531803489425-hsbt71jjv28t5iv0rnopu67aa06s9dvd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.531803489425-hsbt71jjv28t5iv0rnopu67aa06s9dvd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCeBlq3z9mYaleIy2xaDK8dEUt_hB_6Gg4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>531803489425</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mhnd.Watson-Lynn</string>
+	<key>PROJECT_ID</key>
+	<string>sana-246321</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sana-246321.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:531803489425:ios:320cdb683d6c3abad82b30</string>
+	<key>DATABASE_URL</key>
+	<string>https://sana-246321.firebaseio.com</string>
+</dict>
+</plist>

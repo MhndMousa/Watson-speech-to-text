@@ -8,6 +8,12 @@ target 'Watson-Lynn' do
     pod 'IBMWatsonPersonalityInsightsV3', '~> 2.1.1' 
     pod 'IBMWatsonToneAnalyzerV3', '~> 2.1.1'
     pod 'IBMWatsonSpeechToTextV1', '~> 2.1.1'
+    pod 'Firebase'
+
+pod 'FirebaseUI/Storage', '~> 8.0'
+pod 'Firebase/Firestore'
+pod 'Firebase/Analytics'
+
   # Pods for Watson-Lynn
 
   target 'Watson-LynnTests' do
