@@ -10,6 +10,8 @@ import UIKit
 import SpeechToText
 import ToneAnalyzer
 import PersonalityInsights
+import FirebaseFirestore
+import FirebaseStorage
 
 class ViewController: UIViewController{
     
@@ -21,11 +23,12 @@ class ViewController: UIViewController{
     
     @IBOutlet weak var microphoneButton: UIButton!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var analyzeButton: UIButton!
-    @IBOutlet weak var personalityButton: UIButton!
+    @IBOutlet weak var isRecordingLabel: UILabel!
+    //    @IBOutlet weak var analyzeButton: UIButton!
+//    @IBOutlet weak var personalityButton: UIButton!
     //    @IBOutlet weak var analyzeView: UITextView!
 //    @IBOutlet weak var sentenceAnalyzeView: UITextView!
-    @IBOutlet weak var personalityAnalyzeView: UITextView!
+//    @IBOutlet weak var personalityAnalyzeView: UITextView!
 //    @IBOutlet weak var tableView: UITableView!
     
     var coloredTone = [SentenceAnalysis]()
@@ -46,6 +49,43 @@ class ViewController: UIViewController{
         speechToText = SpeechToText(apiKey: "sQlt7zBj8ablPIyH7ExjrVETGTBjhpOibFCCNr01imF-")
         toneAnalyzer = ToneAnalyzer(version: "2017-09-21", apiKey: "uJyDOwI9DHO2orh0nFXJPxKeTYjJlrekK5DKf1lPMVrl")
         personalityInsight = PersonalityInsights(version: "2017-10-13", apiKey: "XflUV2fhbXd9hdlaa7foDV2GJx4Wze0uDJPCc5WRkWQq")
+        
+        
+        microphoneButton.layer.cornerRadius = microphoneButton.bounds.width/2
+        microphoneButton.backgroundColor = .white
+        
+        
+        microphoneButton.layer.shadowColor = UIColor.black.cgColor
+        microphoneButton.layer.shadowOpacity = 0.3
+        microphoneButton.layer.shadowOffset = .zero
+        microphoneButton.layer.shadowRadius = 3
+        
+        
+        let a = CurvedView(frame: CGRect(x: 0, y: view.bounds.height - 220, width: view.bounds.width, height: 220))
+        let b = CurvedViewWithAlpha(frame: CGRect(x: view.bounds.width/2, y: view.bounds.height - 250, width: view.bounds.width, height: 250))
+        let c = CurvedViewWithAlpha(frame: CGRect(x: -view.bounds.width/2, y: view.bounds.height - 250, width: view.bounds.width, height: 250))
+        
+        a.backgroundColor = .clear
+        b.backgroundColor = .clear
+        c.backgroundColor = .clear
+        
+        a.colorIt(c: .green)
+//        let a = CurvedView(frame: <#T##CGRect#>)
+//        a.frame = CGRect(x: 0, y: view.bounds.height - 250, width: view.bounds.width, height: 250)
+//        a.draw(a.frame, color: .green)
+        
+//        let a = CurvedView()
+//        a.draw(CGRect(x: 0, y: view.bounds.height - 250, width: view.bounds.width, height: 250), color: .green)
+        
+        
+        
+        view.insertSubview(a, belowSubview: isRecordingLabel)
+        view.insertSubview(b, aboveSubview: a)
+        view.insertSubview(c, aboveSubview: a)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .default
     }
     
     
@@ -61,7 +101,7 @@ class ViewController: UIViewController{
     @IBAction func recordButtonClicked(_ sender: Any) {
         if !isStreaming {
             isStreaming = true
-            microphoneButton.setTitle("Stop Microphone", for: .normal)
+//            microphoneButton.setTitle("Stop Microphone", for: .normal)
             var settings = RecognitionSettings(contentType: "audio/ogg;codecs=opus")
             settings.interimResults = true
             var callback = RecognizeCallback()
@@ -69,6 +109,10 @@ class ViewController: UIViewController{
                 print(error)
             }
             callback.onResults = { results in
+                
+                self.isRecordingLabel.text = "Recording..."
+//                self.isRecordingLabel.textColor = .black
+                self.microphoneButton.titleLabel?.textColor = .darkRed
                 self.accumulator.add(results: results)
                 print(self.accumulator.bestTranscript)
                 self.textView.text = self.accumulator.bestTranscript
@@ -77,13 +121,14 @@ class ViewController: UIViewController{
             speechToText.recognizeMicrophone(settings: settings, callback: callback)
         } else {
             isStreaming = false
-            microphoneButton.setTitle("Start Microphone", for: .normal)
+            isRecordingLabel.text = "Not Recording"
+//            isRecordingLabel.textColor = .gray
+            microphoneButton.titleLabel?.textColor = .white
+//            microphoneButton.setTitle("Start Microphone", for: .normal)
             speechToText.stopRecognizeMicrophone()
+//            speechToText.audio
         }
     }
-    
-
-
 }
 
 extension ViewController: UITableViewDelegate,UITableViewDataSource{
